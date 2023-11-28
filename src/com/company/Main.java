@@ -16,7 +16,6 @@ public class Main {
         f01 = new funcionario();
         f02 = new funcionario();
 
-    //Dados do funcionario 01
     System.out.println("Dados do Primeiro funcionario: ");
     System.out.println("Digite Nome: ");
     funcionario1.nome = sc.next();
@@ -33,8 +32,6 @@ public class Main {
     System.out.println("Digite o salario do funcionario");
     f01.salario = sc.nextDouble();
 
-
-    //Dados do funcionario 02
     System.out.println("Dados do Segundo Funcionario: ");
     System.out.println("Digite Nome: ");
     funcionario2.nome = sc.next();
@@ -55,9 +52,11 @@ public class Main {
     System.out.println("Funcionario 01");
     funcionario1.mostraInformaçoes();
     f01.dadosFuncionario();
+    System.out.println();
     System.out.println("Funcionario 02");
     funcionario2.mostraInformaçoes();
     f02.dadosFuncionario();
+    System.out.println();
     System.out.println("Obrigada por utilizar o sistema de Registro");
 
 
@@ -67,7 +66,7 @@ public class Main {
 
         /*System.out.println("Seja Bem Vindo");
         System.out.println("Escolha qual programa usar");
-        System.out.println("opcao (1) RegistroJava ou opcao (2) Calculadora");
+        System.out.println("opcao (1) Programa para Calculo de Hora Trabalhadas ou opcao (2) Calculadora");
 
         int opcao = Integer.parseInt(sc.nextLine());
         if (opcao == 1) {

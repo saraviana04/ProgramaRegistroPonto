@@ -1,7 +1,6 @@
 package com.company;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 
 public class funcionario {
 
@@ -42,11 +41,11 @@ public class funcionario {
         this.salario = salario;
     }
 
-     public void dadosFuncionario(){
-         System.out.println("Id Funcionario: " + this.IdFuncionario);
-         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-         System.out.println("Data de entrada: " + sdf.format(this.dataDeEntrada));
-         System.out.printf("Salario R$: %.2f reais" + this.salario);
-     }
+    public void dadosFuncionario() {
+        System.out.println("Id Funcionario: " + this.IdFuncionario);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        System.out.println("Data de entrada: " + sdf.format(this.dataDeEntrada));
+        System.out.printf("Salario R$:" + this.salario);
+    }
 
 }

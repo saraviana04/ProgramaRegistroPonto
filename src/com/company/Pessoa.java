@@ -44,7 +44,6 @@ public class Pessoa {
         this.dataNascimento = dataNascimento;
     }
 
-
     public void mostraInformaçoes() {
         System.out.println("Nome: " + this.nome);
         System.out.println("Sobrenome: " + this.sobrenome);
@@ -53,7 +52,6 @@ public class Pessoa {
         System.out.println("Nascimento: " + sdf.format(this.dataNascimento));
 
     }
-
 
 }
 
