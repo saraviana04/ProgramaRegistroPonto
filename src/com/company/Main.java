@@ -1,75 +1,64 @@
 package com.company;
-import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Scanner;
-public class Main {
 
+public class Main {
 
     public static void main(String[] args) throws ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         Scanner sc = new Scanner(System.in);
-        Pessoa funcionario1, funcionario2, funcionario3;
-  //      Funcionario id;
+        Pessoa funcionario1, funcionario2;
+        funcionario f01, f02;
 
         funcionario1 = new Pessoa();
         funcionario2 = new Pessoa();
-        funcionario3 = new Pessoa();
-       // id = new Funcionario();
+        f01 = new funcionario();
+        f02 = new funcionario();
+
+    //Dados do funcionario 01
+    System.out.println("Dados do Primeiro funcionario: ");
+    System.out.println("Digite Nome: ");
+    funcionario1.nome = sc.next();
+    System.out.println("Digite Sobrenome: ");
+    funcionario1.sobrenome = sc.next();
+    System.out.println("Digite CPF: ");
+    funcionario1.cpf = sc.next();
+    System.out.println("Entre com Data de Nascimento");
+    funcionario1.dataNascimento = simpleDateFormat.parse(sc.next());
+    System.out.println("Digite Id do Funcionario");
+    f01.IdFuncionario = sc.nextInt();
+    System.out.println("Digite Data de Entrada na Empresa");
+    f01.dataDeEntrada = simpleDateFormat.parse(sc.next());
+    System.out.println("Digite o salario do funcionario");
+    f01.salario = sc.nextDouble();
 
 
-
-                    //DADOS DO FUNCIONARIO 01
-        System.out.println("Dados do Primeiro funcionario: ");
-        System.out.println("Digite ID do Funcioanrio: ");
-        funcionario1.idFuncionario = sc.nextInt();
-        System.out.println("Digite Nome: ");
-        funcionario1.nome = sc.next();
-        System.out.println("Digite Sobrenome: ");
-        funcionario1.sobrenome = sc.next();
-        System.out.println("Digite CPF: ");
-        funcionario1.cpf = sc.next();
-        System.out.println("Digite o Salario: ");
-        funcionario1.salario = sc.nextDouble();
-        System.out.println("Entre com Data de Entrada");
-        funcionario1.dataDeEntrada = simpleDateFormat.parse(sc.next());
-        System.out.println("Entre com Data de Nascimento");
-        funcionario1.dataNascimento = simpleDateFormat.parse(sc.next());
-          //DADOS DO FUNCIOANRIO 02
-        System.out.println("Dados do Segundo Funcionario: ");
-        System.out.println("Digite ID do Funcioanrio: ");
-        funcionario2.idFuncionario = sc.nextInt();
-        System.out.println("Digite Nome: ");
-        funcionario2.nome = sc.next();
-        System.out.println("Digite Sobrenome: ");
-        funcionario2.sobrenome = sc.next();
-        System.out.println("Digite CPF: ");
-        funcionario2.cpf = sc.next();
-        System.out.println("Digite o Salario: ");
-        funcionario2.salario = sc.nextDouble();
-        System.out.println("Entre com Data de Entrada");
-        funcionario2.dataDeEntrada = simpleDateFormat.parse(sc.next());
-        System.out.println("Entre com Data de Nascimento");
-        funcionario2.dataNascimento = simpleDateFormat.parse(sc.next());
+    //Dados do funcionario 02
+    System.out.println("Dados do Segundo Funcionario: ");
+    System.out.println("Digite Nome: ");
+    funcionario2.nome = sc.next();
+    System.out.println("Digite Sobrenome: ");
+    funcionario2.sobrenome = sc.next();
+    System.out.println("Digite CPF: ");
+    funcionario2.cpf = sc.next();
+    System.out.println("Entre com Data de Nascimento");
+    funcionario2.dataNascimento = simpleDateFormat.parse(sc.next());
+    System.out.println("Digite Id do Funcionario");
+    f02.IdFuncionario = sc.nextInt();
+    System.out.println("Digite Data de Entrada na Empresa");
+    f02.dataDeEntrada = simpleDateFormat.parse(sc.next());
+    System.out.println("Digite o salario do funcionario");
+    f02.salario = sc.nextDouble();
 
 
-        System.out.println("1");
-        funcionario1.mostraInformaçoes();
-        System.out.println("2");
-        funcionario2.mostraInformaçoes();
- //       System.out.println("3");
-  //      funcionario3.mostraInformaçoes();
-
-
-
-
-
-
-
-
-
-
+    System.out.println("Funcionario 01");
+    funcionario1.mostraInformaçoes();
+    f01.dadosFuncionario();
+    System.out.println("Funcionario 02");
+    funcionario2.mostraInformaçoes();
+    f02.dadosFuncionario();
+    System.out.println("Obrigada por utilizar o sistema de Registro");
 
 
 
@@ -90,6 +79,6 @@ public class Main {
             System.out.println("Operacao invalida :-(");
         }*/
 
-        }
     }
+}
 
