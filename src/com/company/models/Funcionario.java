@@ -1,8 +1,9 @@
-package com.company;
+package com.company.models;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class funcionario {
+public class Funcionario {
 
     public int IdFuncionario;
     public Date dataDeEntrada;
@@ -10,6 +11,7 @@ public class funcionario {
     public double salario;
 
     public int getIdFuncionario() {
+
         return IdFuncionario;
     }
 
